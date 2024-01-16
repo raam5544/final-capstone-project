@@ -1,16 +1,3 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 :root {
   --white: #FFFFFF;
   --tan-1: #FBF9F6;
@@ -22,15 +9,17 @@ code {
   --text-dark: #615954;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--tan-4);
@@ -121,7 +110,8 @@ input {
   border: .1vmin solid var(--tan-3);
   border-radius: .5vmin;
   color: var(--text-dark);
-  background-image: none !important; /* prevent lastpass */
+  background-image: none !important;
+  /* prevent lastpass */
   outline: none;
 }
 
@@ -129,7 +119,8 @@ input:focus {
   border-color: var(--blue);
 }
 
-button, a.button {
+button,
+a.button {
   margin: 1vmin;
   padding: 1vmin;
   color: var(--white);
@@ -154,7 +145,8 @@ button.btn-xs {
   padding: .4vmin .5vmin;
 }
 
-button:disabled, form:invalid button[type="submit"] {
+button:disabled,
+form:invalid button[type="submit"] {
   cursor: not-allowed;
   background-color: var(--tan-4);
 }
@@ -162,4 +154,54 @@ button:disabled, form:invalid button[type="submit"] {
 button[type="submit"] {
   grid-column: span 2;
   margin: 1vmin 0 0;
+}
+
+.AuthPage {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 2vmin;
+}
+
+.AuthPage h3 {
+  margin-top: 4vmin;
+  text-align: center;
+  color: var(--text-light);
+  cursor: pointer;
+}
+
+.NewOrderPage {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1.6fr 3.5fr 3fr;
+  grid-template-rows: 1fr;
+  background-color: var(--white);
+  border-radius: 2vmin;
+}
+
+.NewOrderPage aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3vmin 2vmin;
+}
+
+.OrderHistoryPage {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1.6fr 3.5fr 3fr;
+  grid-template-rows: 1fr;
+  background-color: var(--white);
+  border-radius: 2vmin;
+}
+
+.OrderHistoryPage .aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3vmin 2vmin;
 }
