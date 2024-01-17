@@ -1,10 +1,13 @@
 .NewOrderPage {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1.6fr 3.5fr 3fr;
-    grid-template-rows: 1fr;
-    background-color: var(--white);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* grid-template-columns: 1.6fr 3.5fr 3fr;
+    grid-template-rows: 1fr; */
     border-radius: 2vmin;
+    background-color: aqua;
+    width: 100%;
 }
 
 .NewOrderPage aside {
@@ -13,4 +16,14 @@
     justify-content: space-between;
     align-items: center;
     margin: 3vmin 2vmin;
+    flex-grow: 1;
+}
+
+.NewOrderPage div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3vmin 2vmin;
+    flex-grow: 1;
 }

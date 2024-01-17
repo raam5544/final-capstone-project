@@ -1,6 +1,6 @@
 .OrderDetail {
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     padding: 3vmin;
     font-size: 2vmin;
@@ -8,14 +8,18 @@
 }
 
 .OrderDetail .sectionHeading {
-    width: 100%
+    width: 50%
 }
 
 .OrderDetail .lineItemContainer {
+    display: flex;
+    flex-direction: column;
     margin-top: 3vmin;
     justify-content: flex-start;
-    height: calc(100vh - 18vmin);
+    align-items: center;
+    height: 30vh;
     width: 100%;
+    /* background-color: orange; */
 }
 
 .OrderDetail .total {

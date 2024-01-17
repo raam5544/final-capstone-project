@@ -5,6 +5,10 @@ import { getUser } from './utilities/users-service';
 import AuthPage from './pages/AuthPage/AuthPage';
 import NewOrderPage from './pages/NewOrderPage/NewOrderPage';
 import OrderHistoryPage from './pages/OrderHistoryPage/OrderHistoryPage';
+import PlantDetailPage from './pages/PlantDetailPage/PlantDetailPage'
+import Navbar from './components/Navbar';
+import OrderDetail from './components/OrderDetail/OrderDetail';
+import CartPage from './pages/CartPage/CartPage'
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -12,10 +16,13 @@ export default function App() {
     <main className={styles.App}>
       {user ?
         <>
+          <Navbar user={user} setUser={setUser} />
           <Routes>
             {/* client-side route that renders the component instance if the path matches the url in the address bar */}
             <Route path="/orders/new" element={<NewOrderPage user={user} setUser={setUser} />} />
             <Route path="/orders" element={<OrderHistoryPage user={user} setUser={setUser} />} />
+            <Route path="/plants" element={<PlantDetailPage />} />
+            <Route path='/cart' element={<CartPage user={user} setUser={setUser} />} />
             {/* redirect to /orders/new if path in address bar hasn't matched a <Route> above */}
             <Route path="/*" element={<Navigate to="/orders/new" />} />
           </Routes>
