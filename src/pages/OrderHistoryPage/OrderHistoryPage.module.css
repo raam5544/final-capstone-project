@@ -5,6 +5,9 @@
     grid-template-rows: 1fr; */
     background-color: var(--white);
     border-radius: 2vmin;
+    background-image: url('https://images.pexels.com/photos/565998/pexels-photo-565998.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .OrderHistoryPage .aside {

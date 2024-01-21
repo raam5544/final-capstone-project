@@ -20,6 +20,10 @@ export function setItemQtyInCart(itemId, newQty) {
     return sendRequest(`${BASE_URL}/cart/qty`, 'PUT', { itemId, newQty });
 }
 
+export function setRemoveItemQtyInCart(itemId, newQty) {
+    return sendRequest(`${BASE_URL}/cart/qty`, 'PUT', { itemId, newQty });
+}
+
 // Updates the order's (cart's) isPaid property to true
 export function checkout() {
     // Changing data on the server, so make it a POST request

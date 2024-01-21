@@ -22,7 +22,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--tan-4);
+  /* background-color: green; */
   padding: 2vmin;
   height: 100vh;
 }
@@ -38,6 +38,8 @@ code {
 
 .align-ctr {
   text-align: center;
+  color: black;
+  font-size: 12pt;
 }
 
 .align-rt {
@@ -46,13 +48,16 @@ code {
 
 .smaller {
   font-size: smaller;
+  color: black;
+  font-size: 10pt;
 }
 
+/* 
 .flex-ctr-ctr {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .flex-col {
   flex-direction: column;
@@ -79,52 +84,20 @@ code {
   font-size: 2vmin;
 }
 
-.form-container {
-  padding: 3vmin;
-  background-color: var(--tan-1);
-  border: .1vmin solid var(--tan-3);
-  border-radius: 1vmin;
-}
+
 
 p.error-message {
   color: var(--blue);
   text-align: center;
 }
 
-form {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 1.25vmin;
-  color: var(--text-light);
-}
-
-label {
-  font-size: 2vmin;
-  display: flex;
-  align-items: center;
-}
-
-input {
-  padding: 1vmin;
-  font-size: 2vmin;
-  border: .1vmin solid var(--tan-3);
-  border-radius: .5vmin;
-  color: var(--text-dark);
-  background-image: none !important;
-  /* prevent lastpass */
-  outline: none;
-}
-
-input:focus {
-  border-color: var(--blue);
-}
 
 button,
 a.button {
   margin: 1vmin;
-  padding: 1vmin;
+  padding: 10px;
   color: var(--white);
-  background-color: var(--blue);
+  background-color: lightgreen;
   font-size: 2vmin;
   font-weight: bold;
   text-decoration: none;
@@ -138,11 +111,14 @@ a.button {
 button.btn-sm {
   font-size: 1.5vmin;
   padding: .6vmin .8vmin;
+
 }
 
 button.btn-xs {
-  font-size: 1vmin;
-  padding: .4vmin .5vmin;
+  font-size: 15pt;
+  padding: 5px;
+  margin: 0px 0px 5px 5px;
+  background-color: #F67F00;
 }
 
 button:disabled,
@@ -172,36 +148,159 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-.NewOrderPage {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1.6fr 3.5fr 3fr;
-  grid-template-rows: 1fr;
-  background-color: var(--white);
-  border-radius: 2vmin;
+#light div h3 {
+  background-color: white;
+  color: darkgreen;
 }
 
-.NewOrderPage aside {
+.active {
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+NavLink {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropDown {
+  position: absolute;
+  top: 5rem;
+  right: 0.5rem;
+  width: 200px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: white;
+  border: 1px solid gray;
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  margin: 3vmin 2vmin;
 }
 
-.OrderHistoryPage {
-  height: 100%;
+.dropDown::before {
+  content: '';
+  position: absolute;
+  top: -0.5rem;
+  right: 3rem;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background-color: white;
+  border-left: 1px solid grey;
+  text-wrap: wrap;
+}
+
+.dropDown button {
+  color: black;
+  font-size: 10pt;
+}
+
+nav img:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.dark {
+  padding: 3vmin;
+  background-color: green;
+  border: .1vmin solid var(--tan-3);
+  border-radius: 1vmin;
+  color: white;
+}
+
+
+
+.light {
+  padding: 3vmin;
+  background-color: white;
+  border: .1vmin solid var(--tan-3);
+  border-radius: 1vmin;
+  color: darkgreen;
+}
+
+form {
   display: grid;
-  grid-template-columns: 1.6fr 3.5fr 3fr;
-  grid-template-rows: 1fr;
-  background-color: var(--white);
-  border-radius: 2vmin;
+  grid-template-columns: 1fr 3fr;
+  gap: 1.25vmin;
+  color: black;
+  font-size: 12pt;
 }
 
-.OrderHistoryPage .aside {
+label {
+  font-size: 10pt;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  margin: 3vmin 2vmin;
+  font-weight: bold;
+}
+
+input {
+  padding: 1vmin;
+  font-size: 10pt;
+  border: .1vmin solid var(--tan-3);
+  border-radius: .5vmin;
+  color: var(--text-dark);
+  background-image: none !important;
+  /* prevent lastpass */
+  outline: none;
+}
+
+input:focus {
+  border-color: var(--blue);
+}
+
+
+
+
+/* .parent {
+      background-color: grey;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      width: 70vh;
+  }
+  .image{
+      
+      background-image: url('https://www.lego.com/cdn/cs/set/assets/blt1a18d0fa5e6c09b6/21344_alt3.png?format=webply&fit=bounds&quality=70&width=170&height=170&dpr=1.5');
+      background-size: cover;
+      height: 50vh;
+      width: 50vh;
+  } */
+
+
+.hiddenNav {
+
+  display: none;
+}
+
+@media screen and (max-width:500px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .item {
+    height: 100px;
+    width: 110px;
+    background-color: #615954;
+  }
+
+  .hiddenNav {
+    display: flex;
+    flex-direction: row;
+    width: 470px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #52BE80;
+  }
+
 }

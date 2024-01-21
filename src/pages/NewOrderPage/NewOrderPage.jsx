@@ -9,12 +9,14 @@ import CategoryList from '../../components/CategoryList/CategoryList';
 import OrderDetail from '../../components/OrderDetail/OrderDetail';
 import UserLogOut from '../../components/UserLogOut/UserLogOut';
 
-export default function NewOrderPage({ user, setUser }) {
+export default function NewOrderPage({ user, setUser, setQty, qty }) {
   const [menuItems, setMenuItems] = useState([]);
   const [activeCat, setActiveCat] = useState('');
   const [cart, setCart] = useState(null);
   const categoriesRef = useRef([]);
   const navigate = useNavigate();
+
+
 
   useEffect(function () {
     async function getItems() {
@@ -41,6 +43,7 @@ export default function NewOrderPage({ user, setUser }) {
   async function handleAddToOrder(itemId) {
     const updatedCart = await ordersAPI.addItemToCart(itemId);
     setCart(updatedCart);
+    setQty(qty + 1)
   }
 
   async function handleChangeQty(itemId, newQty) {
@@ -50,6 +53,7 @@ export default function NewOrderPage({ user, setUser }) {
 
   async function handleCheckout() {
     await ordersAPI.checkout();
+    setQty(0)
     navigate('/orders');
   }
 
@@ -60,13 +64,13 @@ export default function NewOrderPage({ user, setUser }) {
           categories={categoriesRef.current}
           cart={setCart}
           setActiveCat={setActiveCat}
+          activeCat={activeCat}
+          qty={qty}
         />
       </aside>
-      <div>
-        <MenuList
-          menuItems={menuItems.filter(item => item.category.name === activeCat)}
-          handleAddToOrder={handleAddToOrder} />
-      </div>
+      <MenuList
+        menuItems={menuItems.filter(item => item.category.name === activeCat)}
+        handleAddToOrder={handleAddToOrder} />
     </main>
   );
 }

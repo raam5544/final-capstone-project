@@ -2,7 +2,8 @@ const Item = require('../../models/item');
 
 module.exports = {
   index,
-  show
+  show,
+  dele
 };
 
 async function index(req, res) {
@@ -24,3 +25,18 @@ async function show(req, res) {
     res.status(400).json({ msg: e.message });
   }  
 }
+
+async function dele (req, res) {
+  try{
+    const item = await Item.findByIdAndRemove(req.params.id);
+    res.status(200).json(item);
+  }catch(e){
+    res.status(400).json({ msg: e.message });
+  }  
+}
+
+// app.delete('/toys/:id', (req, res) => {
+//   Toy.findByIdAndRemove(req.params.id, (err, data) => {
+//       res.redirect('/toys')
+//   })
+// });

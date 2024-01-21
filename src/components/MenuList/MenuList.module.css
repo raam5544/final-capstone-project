@@ -1,5 +1,5 @@
 .MenuList {
-    background-color: green;
+    background-color: blue;
     /* border: .1vmin solid var(--tan-3); */
     border-radius: 2vmin;
     /* margin: 3vmin 0; */
@@ -10,4 +10,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+
 }

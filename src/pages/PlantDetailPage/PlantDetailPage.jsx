@@ -13,9 +13,21 @@ function News() {
 
     const [subselect, setSubselect] = useState('')
 
+    const [count, setCount] = useState(1)
+
+    const handleInc = () => {
+        setCount(count + 1)
+        console.log(count)
+    }
+
+    const handleDec = () => {
+        setCount(count - 1)
+        console.log(count)
+    }
+
     const fetchData = async () => {
         const apiKey = 'sk-TAsB65a3dc68971cf3774'
-        const url = `https://perenual.com/api/species-list?key=${apiKey}&q=maple`
+        const url = `https://perenual.com/api/species-list?key=${apiKey}&page=${count}`
         const response = await fetch(url)
         const fetchedData = await response.json()
         console.log(fetchedData)
@@ -27,9 +39,9 @@ function News() {
         fetchData()
     }, [])
 
-    // useEffect(() => {
-    //     fetchData()
-    // }, [subselect])
+    useEffect(() => {
+        fetchData()
+    }, [count])
 
     const clickMe = () => {
         fetchData()
@@ -60,7 +72,7 @@ function News() {
                                 <div key={i}>
                                     <a target='_blank'>
                                         <div className={styles.thumpCont}>
-                                            {console.log(f.default_image)}
+                                            {/* {console.log(f.default_image)} */}
                                             <img className={styles.thumpNail} src={f.default_image.medium_url} />
                                             <h4 id='thumpNailTitle'>{f.common_name}</h4>
                                         </div>
@@ -70,6 +82,10 @@ function News() {
                         }
 
                     })}
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+                    <button onClick={handleDec}>Previous</button>
+                    <button onClick={handleInc}>Next</button>
                 </div>
             </div >
         )

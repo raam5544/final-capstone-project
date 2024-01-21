@@ -1,6 +1,8 @@
 .newsGrandparent {
     display: flex;
     flex-direction: column;
+    background-image: url('https://images.pexels.com/photos/565998/pexels-photo-565998.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-position: center;
 }
 
 .newsParent {
@@ -9,7 +11,7 @@
     flex-wrap: wrap;
     color: rgb(37, 65, 65);
     justify-content: center;
-    background-color: #f8efc5;
+    background-color: transparent
 }
 
 .newsSelection {
@@ -48,6 +50,9 @@ a {
     align-items: center;
     text-align: center;
     padding: 0%;
+    background-color: WHITE;
+    margin: 10PX;
+   
 }
 
 .thumpCont:hover {
@@ -64,5 +69,5 @@ a {
     height: 50%;
     width: 50%;
     object-fit: cover;
-    /* border-radius: 70px; */
+    border-radius: 20px;
 }

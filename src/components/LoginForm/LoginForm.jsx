@@ -2,8 +2,9 @@
 
 import { useState } from 'react';
 import * as usersService from '../../utilities/users-service';
+import { Navigate } from 'react-router-dom';
 
-export default function LoginForm({ setUser }) {
+export default function LoginForm({ setUser,mode }) {
   const [credentials, setCredentials] = useState({
     email: '',
     password: ''
@@ -31,7 +32,7 @@ export default function LoginForm({ setUser }) {
 
   return (
     <div>
-      <div className="form-container">
+      <div className={mode}>
         <form autoComplete="off" onSubmit={handleSubmit}>
           <label>Email</label>
           <input type="text" name="email" value={credentials.email} onChange={handleChange} required />

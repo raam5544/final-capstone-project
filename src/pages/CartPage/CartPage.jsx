@@ -9,7 +9,7 @@ import CategoryList from '../../components/CategoryList/CategoryList';
 import OrderDetail from '../../components/OrderDetail/OrderDetail';
 import UserLogOut from '../../components/UserLogOut/UserLogOut';
 
-export default function CartPage({ user, setUser }) {
+export default function CartPage({ user, setUser, setQty }) {
     const [menuItems, setMenuItems] = useState([]);
     const [activeCat, setActiveCat] = useState('');
     const [cart, setCart] = useState(null);
@@ -50,16 +50,22 @@ export default function CartPage({ user, setUser }) {
 
     async function handleCheckout() {
         await ordersAPI.checkout();
+        setQty(0)
         navigate('/orders');
     }
 
     return (
         <main className={styles.CartPage}>
-            <OrderDetail
-                order={cart}
-                handleChangeQty={handleChangeQty}
-                handleCheckout={handleCheckout}
-            />
+            <div>
+                <OrderDetail
+                    order={cart}
+                    handleChangeQty={handleChangeQty}
+                    handleCheckout={handleCheckout}
+                />
+            </div>
+            <Link to='/neworder'>
+                <button style={{padding:'10px', marginTop:'25px', color:'black', fontSize:'10pt'}}>Continue Shopping</button>
+            </Link>
         </main>
     );
 }

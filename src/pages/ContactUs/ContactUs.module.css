@@ -1,0 +1,32 @@
+.lable {
+    color: black;
+
+}
+
+.inp {
+    width: 50%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 450px;
+    
+}
+
+.formCont{
+    background-image: url('https://images.pexels.com/photos/565998/pexels-photo-565998.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    
+}
+
+.btn {
+    width: 50px;
+    margin-left: 180px;
+    margin-top: 50px;
+}
+
+.btn:hover {
+    background-color: darkgreen;
+    color: white;
+}

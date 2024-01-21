@@ -1,6 +1,6 @@
 import styles from './CategoryList.module.css';
 
-export default function CategoryList({ categories, activeCat, setActiveCat }) {
+export default function CategoryList({ categories, activeCat, setActiveCat,qty }) {
     const cats = categories.map(cat =>
         <li
             key={cat}

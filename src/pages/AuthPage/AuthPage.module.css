@@ -1,16 +1,33 @@
 .AuthPage {
-    height: 100%;
+    height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: var(--white);
+    /* background-color: green; */
     border-radius: 2vmin;
+    margin: 0;
+    background-image: url('https://cdn.pixabay.com/photo/2020/01/10/10/19/leaves-4754980_1280.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
   
   .AuthPage h3 {
-    margin-top: 4vmin;
+    margin-top: 0.2vmin;
     text-align: center;
-    color: var(--text-light);
+    color: whitesmoke;
     cursor: pointer;
+    background-color: darkgreen;
+    padding: 10px;
+    border-radius: 25px;
   }
+
+  .ButtonCont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+  }
+

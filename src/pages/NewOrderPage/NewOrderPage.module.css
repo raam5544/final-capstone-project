@@ -6,17 +6,22 @@
     /* grid-template-columns: 1.6fr 3.5fr 3fr;
     grid-template-rows: 1fr; */
     border-radius: 2vmin;
-    background-color: aqua;
+    background-color: transparent;
     width: 100%;
+    background-image: url('https://images.pexels.com/photos/565998/pexels-photo-565998.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    
 }
 
 .NewOrderPage aside {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: left;
     margin: 3vmin 2vmin;
     flex-grow: 1;
+    background-color: transparent;
+    text-align: left;
 }
 
 .NewOrderPage div {

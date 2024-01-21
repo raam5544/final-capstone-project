@@ -10,7 +10,7 @@ const lineItemSchema = new Schema({
   toJSON: { virtuals: true }
 });
 
-lineItemSchema.virtual('extPrice').get(function() {
+lineItemSchema.virtual('extPrice').get(function () {
   // 'this' is bound to the lineItem subdoc
   return this.qty * this.item.price;
 });
@@ -24,19 +24,19 @@ const orderSchema = new Schema({
   toJSON: { virtuals: true }
 });
 
-orderSchema.virtual('orderTotal').get(function() {
+orderSchema.virtual('orderTotal').get(function () {
   return this.lineItems.reduce((total, item) => total + item.extPrice, 0);
 });
 
-orderSchema.virtual('totalQty').get(function() {
+orderSchema.virtual('totalQty').get(function () {
   return this.lineItems.reduce((total, item) => total + item.qty, 0);
 });
 
-orderSchema.virtual('orderId').get(function() {
+orderSchema.virtual('orderId').get(function () {
   return this.id.slice(-6).toUpperCase();
 });
 
-orderSchema.statics.getCart = function(userId) {
+orderSchema.statics.getCart = function (userId) {
   // 'this' is the Order model
   return this.findOneAndUpdate(
     // query
@@ -49,7 +49,7 @@ orderSchema.statics.getCart = function(userId) {
   );
 };
 
-orderSchema.methods.addItemToCart = async function(itemId) {
+orderSchema.methods.addItemToCart = async function (itemId) {
   const cart = this;
   // Check if item already in cart
   const lineItem = cart.lineItems.find(lineItem => lineItem.item._id.equals(itemId));
@@ -63,7 +63,7 @@ orderSchema.methods.addItemToCart = async function(itemId) {
 };
 
 // Instance method to set an item's qty in the cart (will add item if does not exist)
-orderSchema.methods.setItemQty = function(itemId, newQty) {
+orderSchema.methods.setItemQty = function (itemId, newQty) {
   // this keyword is bound to the cart (order doc)
   const cart = this;
   // Find the line item in the cart for the menu item
@@ -76,6 +76,15 @@ orderSchema.methods.setItemQty = function(itemId, newQty) {
     lineItem.qty = newQty;
   }
   // return the save() method's promise
+  return cart.save();
+};
+
+orderSchema.methods.setRemoveItemQty = function (itemId, newQty) {
+  // this keyword is bound to the cart (order doc)
+  const cart = this;
+  // Find the line item in the cart for the menu item
+  const lineItem = cart.lineItems.find(lineItem => lineItem.item._id.equals(itemId));
+  lineItem.deleteOne();
   return cart.save();
 };
 

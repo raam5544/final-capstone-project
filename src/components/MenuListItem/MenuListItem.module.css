@@ -1,22 +1,25 @@
 .MenuListItem {
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    width: 200px;
     align-items: center;
-    /* margin-bottom: 3vmin; */
     padding: 10px;
     color: var(--text-light);
-    background-color: var(--white);
     border: .1vmin solid var(--tan-3);
     border-radius: 1vmin;
     font-size: 4vmin;
-    background-color: blue;
+    background-color: yellow;
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+    object-fit: contain;
 }
 
-.MenuListItem .emoji {
-    /* height: 20px;
-    width: 20px; */
+.MenuListItem:hover {
+    background-color: lightseagreen;
+}
+
+.MenuListItem img {
+    height: 150px;
+    width: 150px;
     font-size: 4vw;
     background-color: var(--tan-1);
     border: .1vmin solid var(--tan-3);
@@ -34,13 +37,13 @@
 .MenuListItem .buy span {
     font-size: 1.5vw;
     text-align: center;
-    color: var(--text-light);
+    color: black;
 }
 
 .MenuListItem .name {
     font-size: 1.5vw;
     text-align: center;
-    color: var(--text-light);
+    color: black;
 }
 
 .MenuListItem .btnsm {

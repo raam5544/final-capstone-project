@@ -11,6 +11,7 @@
     border-radius: 1vmin;
     font-size: 2vmin;
     cursor: pointer;
+    background-color: white;
 }
 
 .OrderListItem>div>div:first-child {
@@ -26,4 +27,10 @@
 .OrderListItem:not(.selected):hover {
     border-color: var(--blue);
     border-width: .2vmin;
+}
+
+.alignRt{
+    color: black;
+    font-weight: bolder;
+    font-size: 10pt;
 }

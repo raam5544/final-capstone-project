@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { signUp } from '../../utilities/users-service';
+import { Navigate } from "react-router-dom";
 
 export default class SignUpForm extends Component {
   state = {
@@ -54,9 +55,12 @@ export default class SignUpForm extends Component {
       const user = await signUp(formData);
       // Baby step
       this.props.setUser(user);
-    } catch {
+      console.log(user)
+    } catch (error) {
       // An error happened on the server
-      this.setState({ error: 'Sign Up Failed - Try Again' });
+      this.setState({
+        error: 'Sign Up Failed - Try Again'
+      })
     }
   };
 
@@ -67,7 +71,7 @@ export default class SignUpForm extends Component {
     const disable = this.state.password !== this.state.confirm;
     return (
       <div>
-        <div className="form-container">
+        <div className={this.props.mode}>
           <form autoComplete="off" onSubmit={this.handleSubmit}>
             <label>Name</label>
             <input type="text" name="name" value={this.state.name} onChange={this.handleChange} required />

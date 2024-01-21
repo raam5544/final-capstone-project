@@ -20,6 +20,7 @@ export default function OrderHistoryPage({ user, setUser }) {
       setOrders(orders);
       // If no orders, activeOrder will be set to null below
       setActiveOrder(orders[0] || null);
+      console.log(localStorage)
     }
     fetchOrderHistory();
   }, []);

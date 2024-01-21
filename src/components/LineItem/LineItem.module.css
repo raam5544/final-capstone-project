@@ -7,6 +7,7 @@
     background-color: var(--white);
     border-top: .1vmin solid var(--tan-3);
     font-size: 1.5vw;
+    background-color: transparent;
 }
 
 .LineItem:last-child {
@@ -17,14 +18,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.3vw;
+    font-size: 12pt;
+    color: black;
 }
 
 .LineItem .extPrice {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: 1.3vw;
+    font-size: 12pt;
+    color: black;
 }
 
 .LineItem button {
