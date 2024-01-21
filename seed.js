@@ -32,7 +32,7 @@ const Item = require('./models/item');
     { name: 'Tulip Poplar', img_url: 'https://www.naturehills.com/media/catalog/product/cache/5645ff797ae51e791a199cf4f9b2d709/t/u/tulip_poplar_2_600x600.webp', category: categories[2], price: 11.95 },
     { name: 'Mimosa Tree', img_url: 'https://www.naturehills.com/media/catalog/product/cache/5645ff797ae51e791a199cf4f9b2d709/d/r/dreamstime_xxl_97814927-600x600.webp', category: categories[2], price: 11.95 },
     { name: 'Okame Cherry Tree', img_url: 'https://www.naturehills.com/media/catalog/product/cache/5645ff797ae51e791a199cf4f9b2d709/o/k/okame-cherry-tree-600x600.webp', category: categories[2], price: 11.95 },
-    { name: 'Ivary Silk', img_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSNtzXKq7RkwpugYeAGra0UD-RiBYui3LRJ7kgsAL1TBy57ns_eIYrQOP7KhGAduoseYg&usqp=CAU', category: categories[2], price: 11.95 },
+    { name: 'Ivory Silk', img_url: 'https://www.treetop-nursery.com/wp-content/uploads/2018/08/lilac-tree-ivoty-silk.jpg', category: categories[2], price: 11.95 },
     { name: 'Summer Blooming', img_url: 'https://www.naturehills.com/pub/media/wysiwyg/category_pages/perennials/category_perennials_summerblooming.webp', category: categories[3], price: 11.95 },
     { name: 'Samll Perennials', img_url: 'https://www.naturehills.com/pub/media/wysiwyg/category_pages/perennials/category_perennials_small.webp', category: categories[3], price: 11.95 },
     { name: 'Fast Growing Peren', img_url: 'https://www.naturehills.com/pub/media/wysiwyg/category_pages/perennials/category_perennials_fastgrowing.webp', category: categories[3], price: 11.95 },
