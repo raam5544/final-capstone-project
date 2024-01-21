@@ -39,7 +39,7 @@ const Item = require('./models/item');
     { name: 'Deer Resistant Peren', img_url: 'https://www.naturehills.com/pub/media/wysiwyg/category_pages/perennials/category_perennials_deer.webp', category: categories[3], price: 11.95 },
     { name: 'Primaver Lavender', img_url: 'https://www.naturehills.com/media/catalog/product/cache/5645ff797ae51e791a199cf4f9b2d709/p/r/primavera-lavender-1-600x600.webp', category: categories[4], price: 11.95 },
     { name: 'Sensational Lavender', img_url: 'https://www.naturehills.com/media/catalog/product/cache/5645ff797ae51e791a199cf4f9b2d709/s/e/sensational_-lavender-1-600x600.webp', category: categories[4], price: 11.95 },
-    { name: 'Hidcote Lavender', img_url: 'hhttps://www.naturehills.com/media/catalog/product/cache/5645ff797ae51e791a199cf4f9b2d709/h/i/hidcote_lavendar_600x600.webp', category: categories[4], price: 11.95 },
+    { name: 'Hidcote Lavender', img_url: 'https://assets.americanmeadows.com/media/catalog/product/l/a/lavendula-hidcote-lavender_1.jpg?quality=85&fit=bounds&height=&width=3840&auto=webp&format=pjpg', category: categories[4], price: 11.95 },
     { name: 'Spanish Lavender', img_url: 'https://www.naturehills.com/media/catalog/product/cache/5645ff797ae51e791a199cf4f9b2d709/o/t/otoo_quast_spanish_lavender_600x600.webp', category: categories[4], price: 11.95 }
     // {name: 'Pizza Slice', emoji: '🍕', category: categories[4], price: 3.95},
     // {name: 'Spaghetti', emoji: '🍝', category: categories[4], price: 7.95},
