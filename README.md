@@ -6,7 +6,7 @@ This app is perceived to be the e-commerce app some that could be used to sell a
 
 This app gives the ability to  client to login and make a purchase using his profile and for the business owner this app gives the convenient of having database and other mail connectivity.
 
-I was able to learn how to fetch data from the api, store it as a state and render that through a component. Learned to route between pages and most interestingle learned to use "useContext" to pass data to components.
+![Alt text](./src/assets/screenshot.png)
 
 
 
