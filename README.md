@@ -1,3 +1,16 @@
+# Personal App
+
+## Description
+
+This app is perceived to be the first app some one could access as they wake-up in the morning. It is then can be used to view current news and weather. And more personally, this would suggest morning beverages and morning breakfast for the user based on their preference.
+
+This app solve the problem of having different apps for different set of morning routines of a person. rather than going for several apps to full fill their need. this "Personal App" would have everything in it.
+
+I was able to learn how to fetch data from the api, store it as a state and render that through a component. Learned to route between pages and most interestingle learned to use "useContext" to pass data to components.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
