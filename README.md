@@ -9,7 +9,16 @@ This app gives the ability to  client to login and make a purchase using his pro
 ![Alt text](./src/assets/screenshot.png)
 
 
+## Technologies Used: A list of all technologies, libraries, APIs, etc. used in the project.
 
+
+
+
+
+
+Getting Started: Links to the project's planning (Trello board) and the deployed app.
+Unsolved Problems: List any unsolved issues.
+Future Enhancements: Identify future features and enhancements planned for the project.
 
 # Getting Started with Create React App
 
