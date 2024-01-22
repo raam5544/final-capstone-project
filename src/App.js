@@ -12,6 +12,7 @@ import CartPage from './pages/CartPage/CartPage'
 import { CartQuantityContext } from './Contexts/CartQuantityContext';
 import ContactUs from './pages/ContactUs/ContactUs';
 import AnimatedRoutes from './components/AnimatedRoutes/AnimatedRoutes';
+import Footer from './components/Footer/Footer';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -23,7 +24,8 @@ export default function App() {
         <>
           <CartQuantityContext.Provider>
             <Navbar user={user} setUser={setUser} qty={qty} />
-            <AnimatedRoutes qty={qty} setQty={setQty} user={user} setUser={setUser}/>
+            <AnimatedRoutes qty={qty} setQty={setQty} user={user} setUser={setUser} />
+            <Footer />
           </CartQuantityContext.Provider>
         </>
         :
