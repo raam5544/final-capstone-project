@@ -4,7 +4,7 @@
 
 This app is perceived to be the e-commerce app some that could be used to sell and market their products. It is then can be used to view current news and weather. This app is a more convenient way to do business for small entrepreneurs and start-ups withojut spending heavy initial costs.
 
-This app solve the problem of having different apps for different set of morning routines of a person. rather than going for several apps to full fill their need. this "Personal App" would have everything in it.
+This app gives the ability to  client to login and make a purchase using his profile and for the business owner this app gives the convenient of having database and other mail connectivity.
 
 I was able to learn how to fetch data from the api, store it as a state and render that through a component. Learned to route between pages and most interestingle learned to use "useContext" to pass data to components.
 
