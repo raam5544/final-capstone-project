@@ -8,6 +8,8 @@ import MenuList from '../../components/MenuList/MenuList';
 import CategoryList from '../../components/CategoryList/CategoryList';
 import OrderDetail from '../../components/OrderDetail/OrderDetail';
 import UserLogOut from '../../components/UserLogOut/UserLogOut';
+import { motion } from "framer-motion"
+
 
 export default function NewOrderPage({ user, setUser, setQty, qty }) {
   const [menuItems, setMenuItems] = useState([]);
@@ -58,7 +60,7 @@ export default function NewOrderPage({ user, setUser, setQty, qty }) {
   }
 
   return (
-    <main className={styles.NewOrderPage}>
+    <motion.main className={styles.NewOrderPage} initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}>
       <aside>
         <CategoryList
           categories={categoriesRef.current}
@@ -71,6 +73,6 @@ export default function NewOrderPage({ user, setUser, setQty, qty }) {
       <MenuList
         menuItems={menuItems.filter(item => item.category.name === activeCat)}
         handleAddToOrder={handleAddToOrder} />
-    </main>
+    </motion.main>
   );
 }

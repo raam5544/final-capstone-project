@@ -6,6 +6,8 @@ import Logo from '../../components/Logo/Logo';
 import UserLogOut from '../../components/UserLogOut/UserLogOut';
 import OrderList from '../../components/OrderList/OrderList';
 import OrderDetail from '../../components/OrderDetail/OrderDetail';
+import { motion } from 'framer-motion';
+
 
 export default function OrderHistoryPage({ user, setUser }) {
   /*--- State --- */
@@ -32,7 +34,7 @@ export default function OrderHistoryPage({ user, setUser }) {
 
   /*--- Rendered UI --- */
   return (
-    <main className={styles.OrderHistoryPage}>
+    <motion.main className={styles.OrderHistoryPage} initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}>
       {/* <aside className={styles.aside}>
         <Logo />
         <Link to="/orders/new" className="button btn-sm">NEW ORDER</Link>
@@ -46,6 +48,6 @@ export default function OrderHistoryPage({ user, setUser }) {
       <OrderDetail
         order={activeOrder}
       />
-    </main>
+    </motion.main>
   );
 }
