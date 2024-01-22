@@ -29,6 +29,7 @@ The backend of this project highlights:
 * Proper data storage and management using MongoDB.
 * Adherence to security best practices to protect user data and prevent unauthorized access.
 * Clear API documentation detailing available endpoints and their functionalities.
+* A modular and maintainable code structure that enables future feature expansion.
 
 
 
