@@ -15,7 +15,8 @@ This app gives the ability to  client to login and make a purchase using his pro
 The frontend of this project demonstrates:
 
 * An intuitive user interface built using React.js.User-friendly components for user authentication, login, and signup.
-* Seamless integration with the backend API for fetching and displaying product items.Efficient handling of user interactions such as adding and marking todos as completed. A responsive design that adapts to different screen sizes.
+* Seamless integration with the backend API for fetching and displaying product items.
+* Efficient handling of user interactions such as adding and marking todos as completed. A responsive design that adapts to different screen sizes.
 
 
 ### Backend
