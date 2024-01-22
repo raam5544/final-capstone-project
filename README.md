@@ -115,7 +115,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ## Unsolved Problems:
 
-* 
+* Found difficult to store the data, that are pulled with the third party API into the MONGO DB.
+*  
+
 Future Enhancements: Identify future features and enhancements planned for the project.
 
 ## Acknowledgement
