@@ -117,3 +117,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 * 
 Future Enhancements: Identify future features and enhancements planned for the project.
+
+## Acknowledgement
+
+Thanks to the Perunnals for providing a free API key. And thanks to sites that provided images and logos. 
