@@ -25,7 +25,7 @@ The backend of this project highlights:
 * A robust RESTful API architecture using Node.js and Express.js.
 * User authentication and authorization mechanisms for secure access to the application.
 * Endpoints for user login and signup, ensuring secure user registration and login processes.
-Comprehensive CRUD operations for managing todo items, including creation, retrieval, updating, and deletion.
+* Comprehensive CRUD operations for managing todo items, including creation, retrieval, updating, and deletion.
 
 
 
