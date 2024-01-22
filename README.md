@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This app is perceived to be the e-commerce app some that could be used to sell and market their products. It is then can be used to view current news and weather. And more personally, this would suggest morning beverages and morning breakfast for the user based on their preference.
+This app is perceived to be the e-commerce app some that could be used to sell and market their products. It is then can be used to view current news and weather. This app is a more convenient way to do business for small entrepreneurs and start-ups withojut spending heavy initial costs.
 
 This app solve the problem of having different apps for different set of morning routines of a person. rather than going for several apps to full fill their need. this "Personal App" would have everything in it.
 
