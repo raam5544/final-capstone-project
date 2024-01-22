@@ -17,6 +17,14 @@ The frontend of this project demonstrates:
 An intuitive user interface built using React.js.User-friendly components for user authentication, login, and signup.Seamless integration with the backend API for fetching and displaying product items.Efficient handling of user interactions such as adding and marking todos as completed. A responsive design that adapts to different screen sizes.
 
 
+### Backend
+The backend of this project highlights:
+
+A robust RESTful API architecture using Node.js and Express.js.
+User authentication and authorization mechanisms for secure access to the application.
+
+
+
 
 
 Getting Started: Links to the project's planning (Trello board) and the deployed app.
