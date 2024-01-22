@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    margin-left: 450px;
+    margin-left: 430px;
     
 }
 
@@ -21,9 +21,13 @@
 }
 
 .btn {
-    width: 50px;
-    margin-left: 180px;
+    width: 120px;
+    margin-left: 130px;
     margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: lightgreen;
 }
 
 .btn:hover {

@@ -28,7 +28,7 @@ function ContactUs() {
                 <input className={styles.inp} type="email" name="user_email" />
                 <label className={styles.lable}>Message</label>
                 <textarea className={styles.inp} name="message" />
-                <input className={styles.btn} type="submit" value="Send" />
+                <input className={styles.btn} type="submit" value="Send Message" />
             </form>
         </motion.div>
     );
