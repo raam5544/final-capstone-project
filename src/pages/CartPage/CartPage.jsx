@@ -8,7 +8,7 @@ import MenuList from '../../components/MenuList/MenuList';
 import CategoryList from '../../components/CategoryList/CategoryList';
 import OrderDetail from '../../components/OrderDetail/OrderDetail';
 import UserLogOut from '../../components/UserLogOut/UserLogOut';
-import 
+import { motion } from 'framer-motion';
 
 export default function CartPage({ user, setUser, setQty }) {
     const [menuItems, setMenuItems] = useState([]);
@@ -56,7 +56,7 @@ export default function CartPage({ user, setUser, setQty }) {
     }
 
     return (
-        <main className={styles.CartPage}>
+        <motion.main className={styles.CartPage} initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}>
             <div>
                 <OrderDetail
                     order={cart}
@@ -65,8 +65,8 @@ export default function CartPage({ user, setUser, setQty }) {
                 />
             </div>
             <Link to='/neworder'>
-                <button style={{padding:'10px', marginTop:'25px', color:'black', fontSize:'10pt'}}>Continue Shopping</button>
+                <button style={{ padding: '10px', marginTop: '25px', color: 'black', fontSize: '10pt' }}>Continue Shopping</button>
             </Link>
-        </main>
+        </motion.main>
     );
 }
