@@ -28,6 +28,7 @@ The backend of this project highlights:
 * Comprehensive CRUD operations for managing todo items, including creation, retrieval, updating, and deletion.
 * Proper data storage and management using MongoDB.
 * Adherence to security best practices to protect user data and prevent unauthorized access.
+* Clear API documentation detailing available endpoints and their functionalities.
 
 
 
