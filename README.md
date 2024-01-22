@@ -6,7 +6,11 @@ This app is perceived to be the e-commerce app some that could be used to sell a
 
 This app gives the ability to  client to login and make a purchase using his profile and for the business owner this app gives the convenient of having database and other mail connectivity.
 
+* Auth Page:
 ![Alt text](./src/assets/authpage.png)
+
+* New Order Page;
+![Alt text](./src/assets/neworder.png) 
 
 
 ## Technologies Used: A list of all technologies, libraries, APIs, etc. used in the project.
