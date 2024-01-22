@@ -105,12 +105,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This is the link for deployed app;
+https://raam5544.github.io/final-capstone-project/
 
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-Unsolved Problems: List any unsolved issues.
+## Unsolved Problems:
+
+* 
 Future Enhancements: Identify future features and enhancements planned for the project.
