@@ -40,12 +40,6 @@ Below noted things you need to install to run this project in your system;
 * MongoDB
 * Nodemon
 
-
-
-Getting Started: Links to the project's planning (Trello board) and the deployed app.
-Unsolved Problems: List any unsolved issues.
-Future Enhancements: Identify future features and enhancements planned for the project.
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -116,3 +110,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+Unsolved Problems: List any unsolved issues.
+Future Enhancements: Identify future features and enhancements planned for the project.
