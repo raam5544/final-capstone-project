@@ -18,6 +18,10 @@ This app gives the ability to  client to login and make a purchase using his pro
 
 ![Alt text](./src/assets/plantsapi.png) 
 
+* Contact US Page:
+
+![Alt text](./src/assets/contact.png) 
+
 ## Technologies Used: A list of all technologies, libraries, APIs, etc. used in the project.
 
 ### Frontend
