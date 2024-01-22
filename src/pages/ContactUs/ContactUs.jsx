@@ -2,6 +2,7 @@ import React from 'react'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser';
 import styles from './ContactUs.module.css'
+import { motion } from 'framer-motion';
 
 function ContactUs() {
     const form = useRef();
@@ -19,7 +20,7 @@ function ContactUs() {
     };
 
     return (
-        <div className={styles.formCont}>
+        <motion.div className={styles.formCont} initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}>
             <form className={styles.form} ref={form} onSubmit={sendEmail}>
                 <label className={styles.lable}>Name</label>
                 <input className={styles.inp} type="text" name="user_name" />
@@ -29,7 +30,7 @@ function ContactUs() {
                 <textarea className={styles.inp} name="message" />
                 <input className={styles.btn} type="submit" value="Send" />
             </form>
-        </div>
+        </motion.div>
     );
 }
 
