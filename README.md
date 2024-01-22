@@ -1,6 +1,6 @@
-# Personal App
+# E-Commerce App
 
-## Description
+## Introduction
 
 This app is perceived to be the e-commerce app some that could be used to sell and market their products. It is then can be used to view current news and weather. And more personally, this would suggest morning beverages and morning breakfast for the user based on their preference.
 
