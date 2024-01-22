@@ -31,6 +31,10 @@ The backend of this project highlights:
 * Clear API documentation detailing available endpoints and their functionalities.
 * A modular and maintainable code structure that enables future feature expansion.
 
+### Prerequisites
+
+Below noted things you need to install to run this project in your system;
+
 
 
 
