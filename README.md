@@ -37,6 +37,7 @@ Below noted things you need to install to run this project in your system;
 
 * Node.js
 * NPM
+* MongoDB
 
 
 
