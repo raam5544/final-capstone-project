@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import styles from './PlantDetailPage.module.css';
 import { createRoutesFromChildren } from 'react-router-dom';
+import ReactLoading from "react-loading";
 
 
 function News() {
@@ -26,7 +27,7 @@ function News() {
     }
 
     const fetchData = async () => {
-        const apiKey = 'sk-TAsB65a3dc68971cf3774'
+        const apiKey = 'sk-h2AN65a5481dbf1653787'
         const url = `https://perenual.com/api/species-list?key=${apiKey}&page=${count}`
         const response = await fetch(url)
         const fetchedData = await response.json()
@@ -93,8 +94,9 @@ function News() {
 
     const notLoaded = () => {
         return (
-            <div>
-                <h1>Loading Data</h1>
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+                <ReactLoading type="spokes" color="#006241"
+                    height={150} width={100} />
             </div>
         )
     }
