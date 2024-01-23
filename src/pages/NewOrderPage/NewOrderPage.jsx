@@ -51,6 +51,10 @@ export default function NewOrderPage({ user, setUser, setQty, qty }) {
   async function handleChangeQty(itemId, newQty) {
     const updatedCart = await ordersAPI.setItemQtyInCart(itemId, newQty);
     setCart(updatedCart);
+    console.log('New Qty',newQty)
+    if (newQty==0){
+      setQty(qty-1)
+    }
   }
 
   async function handleCheckout() {

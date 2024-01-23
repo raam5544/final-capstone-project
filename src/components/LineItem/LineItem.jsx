@@ -24,6 +24,7 @@ export default function LineItem({ lineItem, isPaid, handleChangeQty }) {
                         onClick={() => handleChangeQty(lineItem.item._id, lineItem.qty + 1)}
                     >+</button>
                 }
+                <button style={{backgroundColor:'orange'}} onClick={()=>handleChangeQty(lineItem.item._id,0)}>Remove</button>
             </div>
             <div className={styles.extPrice}>${lineItem.extPrice.toFixed(2)}</div>
         </div>

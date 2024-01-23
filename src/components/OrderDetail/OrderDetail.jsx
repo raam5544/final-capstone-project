@@ -15,8 +15,8 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
         />
     );
     return (
-        <div className={styles.OrderDetail} style={{marginTop:'0px'}}>
-            <div className={styles.sectionHeading} style={{display:'flex',flexDirection:'column',marginTop:'0px', alignItems:'flex-start'}}>
+        <div className={styles.OrderDetail} style={{ marginTop: '0px' }}>
+            <div className={styles.sectionHeading} style={{ display: 'flex', flexDirection: 'column', marginTop: '0px', alignItems: 'flex-start' }}>
                 {order.isPaid ?
                     <span className="smaller">ORDER Id: <span className="smaller">{order.orderId}</span></span>
                     :
@@ -24,27 +24,27 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
                 }
                 <span className="smaller">{new Date(order.updatedAt).toLocaleDateString()}</span>
             </div>
-            <div className={`${styles.lineItemContainer} flex-ctr-ctr flex-col scroll-y`} style={{display:'flex'}}>
+            <div className={`${styles.lineItemContainer} flex-ctr-ctr flex-col scroll-y`} style={{ display: 'flex' }}>
                 {lineItems.length ?
                     <>
                         {lineItems}
-                        <section className={styles.total} style={{display:'flex', flexDirection:'row', justifyContent:'flex-end'}}>
+                        <section className={styles.total} style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end' }}>
                             {order.isPaid ?
-                                <span style={{color:'black', marginRight:'200px'}} className={styles.right}>&nbsp;&nbsp;</span>
+                                <span style={{ color: 'black', marginRight: '200px' }} className={styles.right}>&nbsp;&nbsp;</span>
                                 :
-                                <button style={{marginRight:'130px', padding:'10px', color:'black', marginTop:'20px'}}
+                                <button style={{ marginRight: '550px', padding: '10px', color: 'black', marginTop: '20px' }}
                                     className="btn-sm"
                                     onClick={handleCheckout}
                                     disabled={!lineItems.length}
                                 >CHECKOUT</button>
                             }
-                            <span className={styles.totalQty} style={{marginRight:'400px', color:'black'}}>{order.totalQty}</span>
+                            {/* <span className={styles.totalQty} style={{marginRight:'400px', color:'black'}}>{order.totalQty}</span> */}
 
-                            <span style={{color:'black'}} className={styles.right}>${order.orderTotal.toFixed(2)}</span>
+                            <span style={{ color: 'black' }} className={styles.right}>${order.orderTotal.toFixed(2)}</span>
                         </section>
                     </>
                     :
-                    <div style={{marginLeft:'50px'}}>No current orders</div>
+                    <div style={{ marginLeft: '50px' }}>No current orders</div>
                 }
             </div>
         </div>

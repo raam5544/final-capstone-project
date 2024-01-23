@@ -18,7 +18,7 @@ function AnimatedRoutes({ qty, setQty, user, setUser }) {
                 <Route path="/neworder" element={<NewOrderPage qty={qty} setQty={setQty} user={user} setUser={setUser} />} />
                 <Route path="/orders" element={<OrderHistoryPage user={user} setUser={setUser} />} />
                 <Route path="/plants" element={<PlantDetailPage />} />
-                <Route path='/cart' element={<CartPage user={user} setUser={setUser} setQty={setQty} />} />
+                <Route path='/cart' element={<CartPage user={user} setUser={setUser} setQty={setQty} qty={qty} />} />
                 <Route path='/contactus' element={<ContactUs />} />
                 {/* redirect to /orders/new if path in address bar hasn't matched a <Route> above */}
                 <Route path="/*" element={<Navigate to={"/neworder"} />} />

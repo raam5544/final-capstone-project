@@ -10,7 +10,7 @@ import OrderDetail from '../../components/OrderDetail/OrderDetail';
 import UserLogOut from '../../components/UserLogOut/UserLogOut';
 import { motion } from 'framer-motion';
 
-export default function CartPage({ user, setUser, setQty }) {
+export default function CartPage({ user, setUser, setQty, qty }) {
     const [menuItems, setMenuItems] = useState([]);
     const [activeCat, setActiveCat] = useState('');
     const [cart, setCart] = useState(null);
@@ -47,6 +47,9 @@ export default function CartPage({ user, setUser, setQty }) {
     async function handleChangeQty(itemId, newQty) {
         const updatedCart = await ordersAPI.setItemQtyInCart(itemId, newQty);
         setCart(updatedCart);
+        if (newQty == 0) {
+            setQty(qty - 1)
+        }
     }
 
     async function handleCheckout() {
